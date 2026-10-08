@@ -4,6 +4,9 @@ A personal homepage, built with static HTML, CSS, and a small JavaScript enhance
 
 Live site: https://antarr.github.io/
 
+Source repository: [antarr/antarr](https://github.com/antarr/antarr).
+Publishing mirror: [antarr/antarr.github.io](https://github.com/antarr/antarr.github.io).
+
 ## Preview locally
 
 From this directory:
@@ -26,6 +29,15 @@ Content draws on [antarr.dev](https://antarr.dev), [github.com/antarr](https://g
 
 ## Publish
 
-GitHub Pages publishes the root of the `main` branch. Push changes to `main` to update the site. `.nojekyll` enables serving the files directly.
+The source lives in `antarr/antarr`. GitHub requires the specially named `antarr/antarr.github.io` repository to serve the root address, so that repository mirrors this source. GitHub Pages publishes its `main` branch root. `.nojekyll` enables serving the files directly.
+
+After committing changes, push the same commit to the source and publishing repositories:
+
+```sh
+git push origin main
+git push git@github.com:antarr/antarr.github.io.git main
+```
+
+Both repositories share the same commit history. These are ordinary pushes; no deployment keys, access tokens in files, or build services are required.
 
 The portrait comes from antarr.dev. Space Grotesk is licensed under the SIL Open Font License; see `assets/OFL.txt`.
