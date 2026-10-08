@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://antarr.github.io/sitemap.xml
