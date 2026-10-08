@@ -28,7 +28,7 @@ Content draws on [antarr.dev](https://antarr.dev), [github.com/antarr](https://g
 
 ## Publish
 
-GitHub Pages publishes the root of the `main` branch in `antarr/antarr.github.io`. `.nojekyll` enables serving the files directly.
+The `Publish homepage` GitHub Actions workflow publishes the static site from `main` in `antarr/antarr.github.io`. It also supports manual publishing from the Actions tab. There is no application build step.
 
 After committing changes, push to update the site:
 
